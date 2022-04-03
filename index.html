@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CS 193X</title>
-  </head>
-  <body>
-    <h1>Başlık</h1>
-    <strong>Duyurular</strong><br/>
-    4/3: Duyuru 1<br/>
-    4/3: Duyuru 2<br/>
-    <br/>
-    <a href="https://www.google.com.tr/">
-      View Syllabus
-    </a>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi</title>
+</head>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+
+<body>
+    <h1>HTML Dersleri</h1>
+    
+    <section>
+        <nav>
+          <ul>
+            <li><a href="#">Ders 1</a></li>
+            <li><a href="#">Ders 2</a></li>
+            <li><a href="#">Ders 3</a></li>
+          </ul>
+        </nav>
+        
+        <article>
+          <h1>İçerik</h1>
+          <p>Bu sitede HTML ve CSS ile ilgili konulara değinilmiştir.</p>
+          <p>Soru ve talepler için sosyal medya hesaplarımızdan erişebilirsiniz.</p>
+        </article>
+      </section>
+
+    <footer>
+        <a href="https://www.instagram.com/">
+            <img src="Instagram-Icon.png" alt="Instagram" style="width:42px;height:42px;">
+        </a> 
+    
+        <a href="https://twitter.com/?lang=tr/">
+            <img src="twitter.png" alt="Twitter" style="width:42px;height:42px;">
+        </a> 
+    
+        <a href="https://tr.linkedin.com/">
+            <img src="linkedin.png" alt="LinkedIn" style="width:42px;height:42px;">
+        </a> 
+    
+    </footer>
+
+</body>
 </html>
