@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Sitesi</title>
 </head>
 
 <style>
-    * {
-      box-sizing: border-box;
-    }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -18,26 +12,11 @@ body {
 
 /* Style the header */
 header {
-  background-color: #666;
+  background-color: black;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 article {
@@ -45,17 +24,9 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px;
 }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
 footer {
   background-color: lavenderblush;
   padding: 10px;
@@ -68,20 +39,10 @@ footer {
 <body>
     <h1></h1>
 
-    <section>
-        <nav>
-          <ul>
-            <li><a href="#">#</a></li>
-            <li><a href="#">#</a></li>
-            <li><a href="#">#</a></li>
-          </ul>
-        </nav>
-
-        <article>
-          <h1>Hakkımda</h1>
-          <p>( •̀ᴗ•́ )</p>
-        </article>
-      </section>
+    <article>
+      <h1>Hakkımda</h1>
+      <p>( •̀ᴗ•́ )</p>
+    </article>
 
     <footer>
         <a href="https://www.instagram.com/">
